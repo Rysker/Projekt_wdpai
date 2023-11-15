@@ -1,0 +1,187 @@
+body 
+{
+    margin: 0;
+    background-color: #E1E3DA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; 
+}
+
+#leftbar
+{
+    display: inline-block;
+    width:35vw;
+    height:100vh;
+}
+
+#leftbar img
+{
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+}
+
+#rightside 
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 65vw;
+}
+
+.loginsquare 
+{
+    background-color: #FCFCFC;
+    width: 30vw;
+    height: 70vh;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border: none;
+    border-radius: 1em;
+}
+
+#topmessage
+{
+    color: #595ED7;
+    font-size: 2vw;
+    margin-bottom: 5vh;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+form input
+{
+    width: 55%;
+    height: 5vh;
+    margin-bottom: 0.7vh;
+    padding: 0.6vw; 
+    text-align: center;
+    border-radius: 2em;
+    border: 0;
+    background-color: #ECDEDE;
+    font-size: 1vw;
+}
+
+form button
+{
+    background-color: #595ED7;
+    width: 60%;
+    height: 7vh;
+    border-radius: 2em;
+    border:none;
+    font-size: 1.5vw;
+    color:white;
+    margin-bottom: 4vh;
+}
+
+#passwordforget
+{
+    color: #09BFCB;
+    font-size: 1vw;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+#noaccsignup
+{
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+    font-size: 0.7vw;
+}
+
+@media (max-width: 600px) 
+{
+    body
+    {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items horizontally */
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #leftbar
+    {
+        width: 0vw;
+        height: 0vh;
+        margin: 0;
+    }
+
+    #leftbar img 
+    {
+        display: none;
+    }
+
+    #rightside 
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vh;
+        margin: 0;
+    }
+
+    .loginsquare 
+    {
+        width: 80vw;
+        height: 60vh;
+        padding: 1vw;
+        border: 1px solid #ccc;
+        border-radius: 2em;
+    }
+
+    #topmessage
+    {
+        color: #595ED7;
+        font-size: 5.5vw;
+        margin-bottom: 5vh;
+    }
+
+    form input
+    {
+        width: 80%;
+        height: 4vh;
+        margin-bottom: 0.7vh;
+        padding: 0.6vw; 
+        border-radius: 2em;
+        font-size: 4vw;
+    }
+
+    form button
+    {
+        margin-top: 0.4vh;
+        width: 80%;
+        height: 5vh;
+        border-radius: 2em;
+        font-size: 4vw;
+        margin-bottom: 4vh;
+    }
+
+    #passwordforget
+    {
+        font-size: 3vw;
+    }
+    
+    #noaccsignup
+    {
+        gap: 0.5vw;
+        font-size: 2vw;
+    }
+}
