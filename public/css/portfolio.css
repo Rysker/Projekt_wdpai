@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.leftmenu 
+{
+    display: inline-block;
+    width: 12vw;
+    height: 100vh;
+    background-color: #17194E;
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+.leftmenu h1 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+.leftmenu a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+.leftmenu #stocktracker 
+{
+    margin-bottom: 10vh;
+    margin-left: 5vh;
+}
+
+.links > h1 {
+    margin-bottom: 6vh;
+}
+
+.leftmenu #more {
+    margin-top: 10vh;
+}
+
+.rightmenu 
+{
+    display: inline-block;
+    width: 88vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    width: 88vw;
+    height: 15vh;
+    background-color: #17194E;
+}
+
+.workspace 
+{
+    width: 88vw;
+    height: 85vh;
+    background-color: white;
+}
+
+.investmentgoal {
+    width: 40vw;
+    height: 30vh;
+    border: 1.5px solid #7f7a7a;
+    border-radius: 2em;
+    background-color: white;
+    margin: 2em;
+}
+
+.progressindicator {
+    width: 90%;
+    height: 30%;
+    border-radius: 2em;
+    background-color: white;
+    margin: 2em;
+    background-color: aqua;
+}
+
+#setgoal 
+{
+    /* Your styling for #setgoal here */
+}
+
