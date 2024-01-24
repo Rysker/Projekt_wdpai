@@ -1,50 +1,44 @@
-# Your Web App Project Name
+# Stock Tracker
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Demo](#demo)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
-Briefly describe your web app project. Include its purpose, main features, and any unique selling points. This section should provide an overview that gets readers interested in your project.
+Stock Tracker is an application created to help investors with tracking their investments. Stock Tracker allows for creation of portfolios, watchlists, and downloading a history of transactions for portfolios. Users can search for new equities, add them to watchlist, and filter their search based on type of equity they want to find.
 
 ## Features
-List the main features of your web app. You can use bullet points or a numbered list to make it easy to read. For example:
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Demo
-Provide a link to a live demo of your web app if available. You can also include screenshots or GIFs to give readers a visual preview of your app.
+Currently Stock Tracker features are:
+- Managing portfolios (Adding, Deleting, Adding and Deleting investments)
+- Downloading history of transactions for portfolios
+- Watchlist
+- Searching for assets
+- User customization options
 
 ## Getting Started
-Explain how to set up and run your web app locally. Include clear step-by-step instructions.
 
-### Prerequisites
-List any software, libraries, or dependencies that need to be installed before running the app. For example:
-- Node.js
-- npm (Node Package Manager)
-- MongoDB
+Installing Stock Tracker on your machine is very simple. To install it read the following subsections and make sure to do the things step by step according to them to install Stock Tracker.
+
+### Prerequisites:
+To install this application on your local machine you need to have the following things:
+- Docker
 
 ### Installation
 Provide installation instructions. For example:
-1. Clone the repository: `git clone https://github.com/yourusername/your-web-app.git`
-2. Change to the project directory: `cd your-web-app`
-3. Install dependencies: `npm install`
-4. Start the app: `npm start`
+1. Clone the repository: `git clone https://github.com/Rysker/StockTracker.git`
+2. Change to the project directory: `cd StockTracker`
+3. Build Docker container: `docker-compose build`
+4. Start the container: `docker-compose up`
+5. Now to access Stock Tracker, open your web browser and navigate to: 'http://localhost:8080/register'
 
 ## Usage
-Explain how to use your web app. Provide examples and screenshots if necessary. If your app has configuration options, explain how to configure them.
+Stock Tracker can be used after creating an account. After that you can create portfolios, browse assets, and browse your watchlist. You can also customize your profile by changing your currency in 'More' subpage.
 
-## Contributing
-Encourage contributions from the community, and explain how others can contribute to your project. Include guidelines for submitting issues, feature requests, and pull requests.
 
 ## License
-Specify the license under which your web app is released. For example:
 This project is licensed under the [MIT License](LICENSE).
