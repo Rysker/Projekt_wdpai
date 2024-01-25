@@ -18,6 +18,8 @@ class SecurityController extends AppController
         else
         {
             $email = $_POST['email'];
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+                return $this->render('login', ['messages' => ['Invalid e-mail format!']]);
             $password = $_POST['password'];
             $userRepository = new UserRepository();
             
