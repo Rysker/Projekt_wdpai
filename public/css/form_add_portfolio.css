@@ -1,0 +1,38 @@
+.addPortfolio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.addPortfolio input,
+.addPortfolio button 
+{
+    margin: 10px 0;
+    padding: 10px;
+    height: 12%;
+    border-radius: 0.4em;
+}
+
+.addPortfolio input
+{
+    height: 10%;
+}
+
+.addPortfolio button 
+{
+   background-color: black;
+   color: white;
+   width: 50%;
+}
+
+#input_portfolio_name
+{
+    font-size: 1em;
+    text-align: center;
+    width: 50%
+}

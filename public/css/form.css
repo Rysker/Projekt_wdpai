@@ -1,0 +1,15 @@
+.input1, span
+{
+    border-radius: 1em;
+    margin-bottom: 1.5%;
+}
+
+.submit
+{
+    background-color: rgb(17, 18, 18);
+    cursor: pointer;
+    font-size: 1em;
+    height: 12%;
+    color: white;
+    border-radius: 1em;
+}

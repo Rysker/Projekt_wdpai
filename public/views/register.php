@@ -16,7 +16,7 @@
             <form class="register" action="register" method="POST">
                 <input name="email" type="email" placeholder="template@email.com" id="usernameinput"/>
                 <input name="password" type="password" placeholder="Password" id ="passwordinput"/>
-                <input name="confirmpassword" type="password" placeholder="Confirm Password" id ="passwordinput"/>
+                <input name="confirmpassword" type="password" placeholder="Confirm Password" id ="confirminput"/>
                 <button type="submit">REGISTER</button>
             </form>
             <div id="accsignup">

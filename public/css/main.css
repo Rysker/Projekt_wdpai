@@ -1,92 +1,120 @@
-body {
-    margin: 0;
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
+.search
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+.searchbar
+{
+    height: 50%;
+    width: 40%;
+    border-radius: 1.5em;
+    text-align: center;
+}
+
+.choice-boxes
+{
     display: flex;
     flex-direction: row;
-    overflow: hidden; /* Hide scrollbars */
-}
-
-.leftmenu 
-{
-    display: inline-block;
-    width: 12vw;
-    height: 100vh;
-    background-color: #17194E;
-    overflow-y: auto; /* Add vertical scrollbar if needed */
-}
-
-.leftmenu h1 
-{
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1vh;
+    height: 4vh;
+    margin-bottom: 1.4%;
 }
 
-.leftmenu a 
+.choice-box
 {
-    color: white;
-    text-decoration: none;
+    margin-right: 2%;
+    border-radius: 1em;
+    border: 1px solid #232222;
+    width: 10%;
+    text-align: center;
 }
 
-.leftmenu #stocktracker 
+td 
 {
-    margin-bottom: 10vh;
-    margin-left: 5vh;
+    word-wrap: break-word; 
+    word-break: break-all;
 }
 
-.links > h1 {
-    margin-bottom: 6vh;
+.list
+{
+    max-height: 80%;
+    overflow: auto;
+    border-radius: 2em;
 }
 
-.leftmenu #more {
-    margin-top: 10vh;
+.market 
+{
+    font-size: 80%; 
+    color: #29017f; 
+    margin-left: 0;
 }
 
-.rightmenu 
+.stock-search
+{
+    table-layout: fixed;
+    border-radius: 1.6em;
+    font-size: 140%;
+    border: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.legend
+{
+    font-weight: bold;
+    margin-bottom: 3%;
+    border-bottom: 2px solid #000;
+}
+
+.stock-search td 
+{
+    width: 15%;
+    height: 15%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.star-container 
 {
     display: inline-block;
-    width: 88vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-.topbar {
-    width: 88vw;
-    height: 15vh;
-    background-color: #17194E;
-}
-
-.workspace 
+.star-container #star 
 {
-    width: 88vw;
-    height: 85vh;
-    background-color: white;
+    font-size: 125%;
+    color: black; 
 }
 
-.investmentgoal {
-    width: 40vw;
-    height: 30vh;
-    border: 1.5px solid #7f7a7a;
-    border-radius: 2em;
-    background-color: white;
-    margin: 2em;
-}
-
-.progressindicator {
-    width: 90%;
-    height: 30%;
-    border-radius: 2em;
-    background-color: white;
-    margin: 2em;
-    background-color: aqua;
-}
-
-#setgoal 
+.star-container #star:hover 
 {
-    /* Your styling for #setgoal here */
+    cursor: pointer;
+    color: blue;
 }
 
+.choice-box.selected
+{
+    background-color: rgb(11, 1, 62);
+    color: white;
+}
+
+.choice-box:hover
+{
+    cursor: pointer;
+}
+
+@media (max-width: 600px)
+{
+    .choice-box
+    {
+        width: auto;
+    }
+
+    .stock-search
+    {
+        padding-left: 3%;
+        padding-top: 3%;
+    }
+}

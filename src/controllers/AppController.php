@@ -1,7 +1,8 @@
 <?php
 
 class AppController
-{ private $request;
+{ 
+    private $request;
 
     public function __construct()
     {
@@ -30,6 +31,18 @@ class AppController
             include $templatePath;
             $output = ob_get_clean();
         }
-        print $output;
+        echo $output;
+
+        if (isset($messages) && is_array($messages)) 
+        {
+            echo '<script>';
+            foreach ($messages as $message) 
+            {
+                echo 'alert("' . addslashes($message) . '");';
+            }
+            echo '</script>';
+        }
     }
+
+    
 }

@@ -1,0 +1,33 @@
+.option
+{
+    background-color: black;
+    color: white;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    height: 8%;
+    border: 1px solid #bfef00;
+    border-radius: 2em;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.option:hover
+{
+    background-color: #143bd5;
+    cursor: pointer;
+}
+
+@media (max-width: 600px)
+{
+    .option
+    {
+        width: auto;
+        min-width: 30%;
+        max-width: 40%;
+    }
+}

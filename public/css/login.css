@@ -101,6 +101,12 @@ form button
     font-size: 0.7vw;
 }
 
+#signup
+{
+    text-decoration: none;
+    color: #09BFCB;
+}
+
 @media (max-width: 600px) 
 {
     body
