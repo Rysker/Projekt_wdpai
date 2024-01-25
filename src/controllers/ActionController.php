@@ -218,7 +218,7 @@ class ActionController extends AppController
         {
             try 
             {
-                $users = $this->user_repository->removeSession();
+                $this->user_repository->removeSession();
                 header("Location: login");
             } 
             catch (PDOException $exception) 
