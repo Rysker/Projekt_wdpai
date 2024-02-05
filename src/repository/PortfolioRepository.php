@@ -180,8 +180,6 @@ class PortfolioRepository extends Repository
 
     public function getHistory($portfolio)
     {
-        $token = $_SESSION['token'];
-        $id = $this->getIdFromToken($token);
         $stmt = $this->database->connect()->prepare('
             select date, asset_name as name, quantity, price, currency_sign as sign, transaction_type as type
             from public.asset
@@ -191,10 +189,10 @@ class PortfolioRepository extends Repository
             natural join public.transaction_type
             natural join public.investment
             natural join public.currency
-            where id_user = ? and id_portfolio = ?
+            where id_portfolio = ?
             order by date asc;
         ');
-        $stmt->execute([$id, $portfolio]);
+        $stmt->execute([$portfolio]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
